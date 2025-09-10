@@ -1,0 +1,50 @@
+# Core dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# LangChain ecosystem (conflict fixed)
+langchain==0.1.0
+langchain-core
+langchain-openai
+langgraph
+
+# DSPy
+dspy-ai==2.4.0
+
+# Computer Vision & OCR
+opencv-python==4.8.1.78
+pytesseract==0.3.10
+Pillow==10.1.0
+pyautogui==0.9.54
+
+# Machine Learning
+torch==2.1.2
+transformers==4.36.0
+accelerate==0.25.0
+peft==0.7.1
+bitsandbytes==0.41.3
+
+# Data handling
+numpy==1.25.2
+pandas==2.1.4
+scikit-learn==1.3.2
+
+# Vector database (optional)
+qdrant-client==1.7.0
+
+# Utilities
+pyyaml==6.0.1
+python-dotenv==1.0.0
+requests==2.31.0
+aiofiles==23.2.0
+
+# Development & Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+
+# Logging & Monitoring
+structlog==23.2.0

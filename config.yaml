@@ -1,0 +1,37 @@
+llm:
+  model_name: "gpt-3.5-turbo"
+  temperature: 0.1
+  max_tokens: 1000
+
+capture:
+  default_region:
+    x: 0
+    y: 0
+    width: 1920
+    height: 1080
+  capture_delay: 0.5
+
+extraction:
+  ocr_engine: "tesseract"
+  confidence_threshold: 0.7
+
+dspy:
+  optimizer: "MIPROv2"
+  training_examples: 100
+  validation_examples: 20
+
+memory:
+  vector_db: "qdrant"
+  similarity_threshold: 0.75
+  max_memories: 1000
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins: ["*"]
+  rate_limit: "100/minute"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/catan_assistant.log"
